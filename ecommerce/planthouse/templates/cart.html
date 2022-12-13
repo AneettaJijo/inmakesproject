@@ -92,8 +92,34 @@ Cart
                     <a href="{% url 'plantproducts:AllProdC' %}" class="btn btn-secondary btn-block my_custom_button">Continue</a>
                 </div>
                 {% endif %}
+                <table class=" table my_table">
+                    <thead class="table_head">
+                    <tr>
+                        <th>
+                            Payment
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <br><b>Please Do Payment Procedure If Confirmed</b>
+                        </td>
+                    </tr>
+                    <br>
+                    </tbody>
+                </table>
+                <div>
+                    <img src="{% static 'image/google.png' %}" height="100px;" width="100px;">&nbsp;
+                    <img src="{% static 'image/mastercard.png' %}"  height="50px;" width="50px;">&nbsp;
+                    <img src="{% static 'image/paypal.png' %}"  height="50px;" width="50px;">&nbsp;
+                    <img src="{% static 'image/download.png' %}"  height="70px;" width="70px;">
+                </div>
+                <div class="mx_auto">
+                    <a href="{% url 'plantproducts:AllProdC' %}" class="btn btn-secondary btn-block my_custom_button">Pay</a>
+                </div>
             </div>
         </div>
-    </div>
+    </div><br><br><br><br><br>
 
 {% endblock %}
